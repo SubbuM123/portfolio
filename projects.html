@@ -13,17 +13,41 @@
 </head>
 
 <body>
+    <header class="py-2">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"></a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <div class="container text-left my-5">
         <div class="row p-3">
             <div class="col-sm-15 text-white">
-                <h1>Here are my past experiences:</h1>
-                <p>Submarine ChessBot 
-                    Currently developing a transformer-based chess bot implemented with pytorch. Scraping game data from both a user and Lichess via bs4. Bot performance is dynamic and adaptive  based on a player rating 
-                    Finance Simulator  
-                    Fully developed a Java-based simulator that models bank account and certificate of deposit balances over time. Used HTML/CSS/JavaScript to create a UI to visualize their account balances after n months
-                    StudyTrail 
-                    Developed an iOS app for UIUC students to see customized plans for class registration. Used Swift, Python to scrape course prerequisite data, and Java to build a graph class with functionality to produce sample degree schedules and paths                    
-                    </p>
+                <h1>Personal Projects: <br><br></h1>
+                <div class="card-header d-flex justify-content-between ps-0">
+                    <h4>Submarine ChessBot<h4>
+                </div>
+                <p> Currently developing a transformer-based chess bot implemented with pytorch. Scraping game data from both a user and Lichess via bs4. Bot performance is dynamic and adaptive  based on a player rating 
+                    Finance Simulator</p>
+                    <br>
+                <div class="card-header d-flex justify-content-between ps-0">
+                    <h4>Finance Simulator<h4>
+                </div>
+                <p> Fully developed a Java-based simulator that models bank account and certificate of deposit balances over time. Used HTML/CSS/JavaScript to create a UI to visualize their account balances after n months
+                    StudyTrail  </p>
+                    <br>
+                <div class="card-header d-flex justify-content-between ps-0">
+                    <h4>StudyTrail<h4>
+                </div>
+                <p> Developed an iOS app for UIUC students to see customized plans for class registration. Used Swift, Python to scrape course prerequisite data,
+                     and Java to build a graph class with functionality to produce sample degree schedules and paths</p>
             </div>
     
             <!-- <div class="col-sm-8">
