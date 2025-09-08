@@ -19,3 +19,69 @@ img {
     background: #0e4b4f !important;
     transition: background 200ms linear;
 }
+
+.bio-text {
+    width: calc(100% - 700px);
+}
+
+
+/* Homepage Animation */
+.scroll-wrapper {
+    overflow: hidden;
+    width: calc(100% - 500px); /* trims 50px from both sides */
+    margin: 0 auto;            /* centers the marquee */
+    }
+    
+.scroll-track {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    animation: scroll-left 20s linear infinite;
+}
+
+.scroll-content {
+    flex: 0 0 auto;
+    padding-right: 2rem; /* spacing between loops */
+    color: white;
+}
+
+@keyframes scroll-left {
+    0%   { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+@media (max-width: 576px) {
+    .scroll-wrapper {
+        width: calc(100% - 40px); /* trims 20px each side */
+    }
+}
+
+/* Icons */
+.icon-img {
+    width: 40px;
+    height: 40px;
+}
+
+.github-icon {
+    position: fixed;
+    right: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+  }
+
+.in-icon {
+    position: fixed;
+    right: 1%;
+    top: 60%;
+    transform: translateY(-50%);
+    z-index: 1000;
+  }
+
+  .email-icon {
+    position: fixed;
+    right: 1%;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 1000;
+  }
