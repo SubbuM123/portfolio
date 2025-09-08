@@ -24,6 +24,16 @@ img {
     width: calc(100% - 700px);
 }
 
+@media (max-width: 576px) {
+    .scroll-wrapper {
+        width: calc(100% - 40px); /* trims 20px each side */
+    }
+
+    .bio-text {
+        width: calc(100% - 40px);
+    }
+}
+
 
 /* Homepage Animation */
 .scroll-wrapper {
