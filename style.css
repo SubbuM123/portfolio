@@ -38,33 +38,40 @@ img {
 /* Homepage Animation */
 .scroll-wrapper {
     overflow: hidden;
-    width: calc(100% - 500px); /* trims 50px from both sides */
-    margin: 0 auto;            /* centers the marquee */
-    }
-    
+    width: calc(100% - 500px); /* trims 250px from each side */
+    margin: 0 auto;
+}
+
 .scroll-track {
     display: flex;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-    animation: scroll-left 20s linear infinite;
+    width: max-content;
+    animation: scroll-left 40s linear infinite;
 }
 
 .scroll-content {
-    flex: 0 0 auto;
-    padding-right: 2rem; /* spacing between loops */
+    white-space: nowrap;
+    padding-right: 2rem;
     color: white;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
+/* KEY FIX: move only half the track width */
 @keyframes scroll-left {
-    0%   { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 @media (max-width: 576px) {
     .scroll-wrapper {
-        width: calc(100% - 40px); /* trims 20px each side */
+        width: calc(100% - 40px);
     }
 }
+
 
 /* Icons */
 .icon-img {
