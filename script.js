@@ -19,3 +19,8 @@ function detectMob() {
         return navigator.userAgent.match(toMatchItem);
     });
 }
+
+window.addEventListener('scroll', () => {
+    const indicator = document.querySelector('.scroll-indicator');
+    indicator.style.opacity = window.scrollY > 600 ? '0' : '1';
+});

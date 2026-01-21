@@ -8,6 +8,7 @@
     <link rel="icon" type="image/png" href="chess1.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet" />
     <script src="script.js"></script>
 </head>
@@ -27,45 +28,124 @@
             </div>
         </nav>
     </header>
-    <div class="container text-left my-5">
-        <div class="row p-3">
-            <div class="col-sm-15 text-white">
-                <h1>Personal Projects: <br><br></h1>
 
-                <div class="card-header d-flex justify-content-between ps-0">
-                    <h4>Research Paper Retrieval System<h4>
-                </div>
-                <ul>
-                    <li> Built a retrival system from scratch for research papers </li>
-                    <li> Implemented TF-IDF and Okapi BM25 transformations, coverage ratio, query spanning, and lexical embeddings, with a learning-to-rank algorthim</li>
-                    <li> After hyperparameter testing, achieved an MRR value of 0.52 for retrieved articles </li>
-                </ul>
-                <div class="card-header d-flex justify-content-between ps-0">
-                    <h4>Permutation Tests Library<h4>
-                </div>
-                <ul>
-                    <li> R package for various permutations tests </li>
-                    <li> Nearest Neighbor, Energy Distance, Hotelling's T, and Graph Based Tests</li>
-                    <li> Published after hyperparameter tuning </li>
-                </ul>
-                <div class="card-header d-flex justify-content-between ps-0">
-                    <h4>Finance Simulator <h4>
-                </div>
-                <ul>
-                    <li> Fully developed a Java-based simulator that models bank account over time, created a object-oriented banking system </li>
-                    <li> Used HTML/CSS/Javascript for front end components, with a simple Java based backend infrastructure </li>
-                    <li> Users can edit account balances and receive growth projections based on provided parameters </li>
-                </ul>
-                <div class="card-header d-flex justify-content-between ps-0">
-                    <h4>StudyTrail <h4>
-                </div>
-                <ul>
-                    <li>Developed an iOS app for UIUC students to see customized plans for class registration </li>
-                    <li> Used Swift for UI components, Python to scrape course prerequisite data </li>
-                    <li> Java to build a graph class with functionality to produce sample degree schedules, using a modified path finding algorithm </li>
-                </ul>
+    <div class="container text-left my-5">
+
+        <div class="row p-3">
+            <div class="col-12 text-white text-center">
+                <h1 class="d-inline-block border-bottom border-4 pb-2">
+                    Projects and Software
+                </h1>
+            </div>
         </div>
     </div>
+
+    <div class="container text-left my-5">
+        <div class="row p-3">
+            <!-- First Row -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="https://github.com/SubbuM123/CricBase" target="_blank" class="card-link">
+                    <div class="card custom-card">
+                        <img src="cards/cric-base.png" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">CricBase</h5>
+                            <ul>
+                                <li>Web application to serve as a directory for international cricket</li>
+                                <li>Built with a structured database, provides customizable visualizations, live scores, match/series/player CRUD</li>
+                                <li>Frontend implemented with React and Typescript, data preprocessing in python</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="https://github.com/SubbuM123/303Cookery" target="_blank" class="card-link">
+                    <div class="card custom-card">
+                        <img src="303-cookery.png" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">303Cookery</h5>
+                            <ul>
+                                <li>Recipe lookup, filtration, and recommendation website built with GPT-4</li>
+                                <li>KMeans and NN models to determine relevant recipes, with vectorized recipe lookup </li>
+                                <li>Dynamic, flask-based site that displays ~140,000 recipes with their indgredients, ratings, instructions, and tags</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="https://github.com" target="_blank" class="card-link">
+                    <div class="card custom-card">
+                        <img src="cards/ret-sys.png" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Research Paper Search Engine</h5>
+                            <ul>
+                                <li>Flask based web retrieval system for research papers from scratch</li>
+                                <li>Implemented TF-IDF and Okapi BM25 transformations, coverage ratio, fuzzy lookup</li>
+                                <li>Grid based hyperparameter tuning, average MRR score of 0.52</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            
+        </div>
+
+        <!-- Second Row -->
+        <div class="row p-3">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="https://github.com" target="_blank" class="card-link">
+                    <div class="card custom-card">
+                        <img src="cards/study-trail.png" class="card-img-top" alt="Project 4">
+                        <div class="card-body">
+                            <h5 class="card-title">StudyTrail</h5>
+                            <ul>
+                                <li>iOS app for UIUC students to see customized plans for class registration (group project)</li>
+                                <li>Used Swift for UI components and Python to scrape course prerequisite data</li>
+                                <li>Built a graph class in Java to produce sample degree schedules with a modified pathfinding algorithm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="https://github.com/SubbuM123/PermutationTests" target="_blank" class="card-link">
+                    <div class="card custom-card">
+                        <img src="cards/r-pack.png" class="card-img-top" alt="Project 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Permutation Tests Library</h5>
+                            <ul>
+                                <li>Complete R package for permutation tests</li>
+                                <li>Includes Nearest Neighbor, Energy Distance, Hotelling's T, and Graph Based Tests</li>
+                                <li>Published with comprehensive documentation, parameter testing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <a href="https://github.com/SubbuM123/Java-Finance-Simulator" target="_blank" class="card-link">
+                    <div class="card custom-card">
+                        <img src="cards/bank-sim.png" class="card-img-top" alt="Project 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Finance Simulator</h5>
+                            <ul>
+                                <li>Java-based simulator for modeling bank accounts over time</li>
+                                <li>Created an object-oriented banking system with HTML/CSS/JavaScript UI</li>
+                                <li>Users can edit account balances and receive growth projections based on provided parameters</li>
+                            </ul>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <div class="col-sm-8">
         <!-- <img class="img-fluid" src="chess5.png" /> -->
         <div class="row p-5 gx-2">
@@ -77,11 +157,12 @@
                 <a href="https://github.com/SubbuM123" target="_blank"><img class="img-fluid icon-img github-icon"
                         src="icons/github.png" /></a>
             </div>
-            <!-- <div class="col">
-                <a href="subbumuthiah1@gmail.com"><img class="img-fluid" src="home/icon_email.png" /></a>
-            </div> -->
         </div>
     </div> 
+
+    <div class="scroll-indicator">
+        <i class="bi bi-chevron-down"></i>
+    </div>
     
 
 </body>
