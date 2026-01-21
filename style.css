@@ -1,70 +1,45 @@
 body {
+    /* background-image: url("chess5.png"); */
     background-color: #252536;
     background-attachment: fixed;
-    margin: 0;
-    padding-top: 70px;
-    color: #ffffff;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-}
+   }
 
 img {
     display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-}
-
-@media (min-width: 768px) {
-    img {
-        max-width: 55%;
-    }
-}
-
-.navbar {
-    background-color: rgba(14, 75, 79, 0.95);
-    transition: background-color 200ms linear;
-    z-index: 2000;
-}
-
-.navbar-scrolled {
-    background-color: #0e4b4f !important;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.85);
-}
-
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link.active {
-    color: #ffffff;
-}
-
-.navbar-collapse {
-    background-color: #0e4b4f;
-}
-
-.navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.5);
-}
-
-.navbar-toggler-icon {
-    filter: invert(1);
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
 }
 
 .center {
     padding: 70px 0;
 }
 
-.bio-text,
-.scroll-wrapper {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 20px;
+.navbar-scrolled {
+    background: #0e4b4f !important;
+    transition: background 200ms linear;
 }
 
+.bio-text {
+    width: calc(100% - 700px);
+}
+
+@media (max-width: 576px) {
+    .scroll-wrapper {
+        width: calc(100% - 40px); /* trims 20px each side */
+    }
+
+    .bio-text {
+        width: calc(100% - 40px);
+    }
+}
+
+
+/* Homepage Animation */
 .scroll-wrapper {
     overflow: hidden;
+    width: calc(100% - 500px); /* trims 250px from each side */
+    margin: 0 auto;
 }
 
 .scroll-track {
@@ -76,11 +51,12 @@ img {
 .scroll-content {
     white-space: nowrap;
     padding-right: 2rem;
+    color: white;
     font-size: 2rem;
     font-weight: 600;
-    color: white;
 }
 
+/* KEY FIX: move only half the track width */
 @keyframes scroll-left {
     from {
         transform: translateX(0);
@@ -91,48 +67,44 @@ img {
 }
 
 @media (max-width: 576px) {
-    .scroll-content {
-        font-size: 1.25rem;
+    .scroll-wrapper {
+        width: calc(100% - 40px);
     }
 }
 
+
+/* Icons */
 .icon-img {
     width: 40px;
     height: 40px;
 }
 
-.github-icon,
-.in-icon,
-.email-icon {
+.github-icon {
     position: fixed;
     right: 1%;
-    z-index: 1000;
-}
-
-.github-icon {
     top: 50%;
     transform: translateY(-50%);
-}
+    z-index: 1000;
+  }
 
 .in-icon {
+    position: fixed;
+    right: 1%;
     top: 60%;
     transform: translateY(-50%);
-}
+    z-index: 1000;
+  }
 
-.email-icon {
+  .email-icon {
+    position: fixed;
+    right: 1%;
     top: 40%;
     transform: translateY(-50%);
-}
+    z-index: 1000;
+  }
 
-@media (max-width: 576px) {
-    .github-icon,
-    .in-icon,
-    .email-icon {
-        display: none;
-    }
-}
-
-.custom-card {
+  /* Custom styles for the card layout */
+  .custom-card {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -149,13 +121,13 @@ img {
 
 .card-title {
     font-size: 1.25rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 10px;
 }
 
-.card-date {
-    font-size: 0.75rem;
-    color: #adb5bd;
-    margin-bottom: 0.75rem;
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
 }
 
 .card-img-top {
@@ -172,10 +144,14 @@ img {
     cursor: pointer;
 }
 
-ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0;
+.card-title {
+    margin-bottom: 0.25rem; /* small space under title */
+}
+
+.card-date {
+    font-size: 0.75rem;
+    color: #6c757d; /* Bootstrap muted gray */
+    margin-bottom: 0.75rem; /* space before description */
 }
 
 .scroll-indicator {
@@ -185,7 +161,7 @@ ul {
     font-size: 2rem;
     color: rgba(255, 255, 255, 0.7);
     animation: bounce 1.5s infinite;
-    pointer-events: none;
+    pointer-events: none; /* purely visual */
 }
 
 @keyframes bounce {
