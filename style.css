@@ -172,3 +172,8 @@ ul {
         transform: translateY(10px);
     }
 }
+
+.navbar-brand img {
+    max-height: 40px;
+    width: auto;
+  }
